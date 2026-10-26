@@ -1,0 +1,88 @@
+{
+  "dataset_rows": 284807,
+  "training_rows": 227845,
+  "test_rows": 56962,
+  "fraud_cases_in_test": 98,
+  "fraud_prevalence": 0.001727485630620034,
+  "random_state": 42,
+  "test_size": 0.2,
+  "thresholds": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "models": {
+    "Logistic Regression": {
+      "average_precision": 0.7159122424484009,
+      "roc_auc": 0.9721687370080279,
+      "threshold_results": [
+        {
+          "threshold": 0.1,
+          "precision": 0.008117308195862791,
+          "recall": 0.9489795918367347,
+          "f1_score": 0.01609692773691043,
+          "true_negatives": 45500,
+          "false_positives": 11364,
+          "false_negatives": 5,
+          "true_positives": 93
+        },
+        {
+          "threshold": 0.25,
+          "precision": 0.021216407355021217,
+          "recall": 0.9183673469387755,
+          "f1_score": 0.041474654377880185,
+          "true_negatives": 52712,
+          "false_positives": 4152,
+          "false_negatives": 8,
+          "true_positives": 90
+        },
+        {
+          "threshold": 0.5,
+          "precision": 0.06097560975609756,
+          "recall": 0.9183673469387755,
+          "f1_score": 0.11435832274459974,
+          "true_negatives": 55478,
+          "false_positives": 1386,
+          "false_negatives": 8,
+          "true_positives": 90
+        }
+      ]
+    },
+    "Random Forest": {
+      "average_precision": 0.8582661495972296,
+      "roc_auc": 0.9506165085617815,
+      "threshold_results": [
+        {
+          "threshold": 0.1,
+          "precision": 0.7016129032258065,
+          "recall": 0.8877551020408163,
+          "f1_score": 0.7837837837837838,
+          "true_negatives": 56827,
+          "false_positives": 37,
+          "false_negatives": 11,
+          "true_positives": 87
+        },
+        {
+          "threshold": 0.25,
+          "precision": 0.8367346938775511,
+          "recall": 0.8367346938775511,
+          "f1_score": 0.8367346938775511,
+          "true_negatives": 56848,
+          "false_positives": 16,
+          "false_negatives": 16,
+          "true_positives": 82
+        },
+        {
+          "threshold": 0.5,
+          "precision": 0.9493670886075949,
+          "recall": 0.7653061224489796,
+          "f1_score": 0.847457627118644,
+          "true_negatives": 56860,
+          "false_positives": 4,
+          "false_negatives": 23,
+          "true_positives": 75
+        }
+      ]
+    }
+  }
+}

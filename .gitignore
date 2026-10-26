@@ -1,0 +1,25 @@
+
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Exclude CSV datasets and demo data
+data/*.csv
+
+# Exclude local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Generated demo data
+models/demo_transactions.csv
+
+# Local backup copies
+*_backup.py
